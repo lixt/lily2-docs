@@ -299,9 +299,9 @@ Arch-Dependent, Superscalar Features
     ┌─────────────────────────────────────────────────────┐
     │                      Black Box                      │
     └─────────────────────────────────────────────────────┘
-               │               │              │
-    ┌──────────────────────┐   │   ┌──────────────────────┐
-    │    Regsiter File R   │───┴───│    Regsiter File F   │
+               │                              │
+    ┌──────────────────────┐       ┌──────────────────────┐
+    │    Regsiter File R   │       │    Regsiter File F   │
     └──────────────────────┘       └──────────────────────┘
     Figure 2.3 Superscalar functional units architecture.
     There are six functional units for LILY2 to dispatch
