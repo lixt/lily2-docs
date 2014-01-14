@@ -791,9 +791,7 @@ In LILY2 ISA sheet, `+' indicates instruction code space.
     |    |     | 01? |   -   | MKH        | E 11 110 01M M M MMMMMMMM MMMMM DDDDD ZZZ | rD,iM        |
     |    |     | +++ | +++++ | ++++++++++ | +++++++++++++++++++++++++++++++++++++++++ | ++++++++++++ |
     |    |     | 111 | 00000 | MRW        | E 11 110 111 - - ---00000 AAAAA DDDDD ZZZ | rD,rA        |
-    |    |     |     | 00001 | SRW        | E 11 110 111 - - ---00001 AAAAA DDDDD ZZZ | rD,rA        |
     |    |     |     | 00010 | MRD        | E 11 110 111 - - ---00010 AAAAA DDDDD ZZZ | dD,dA        |
-    |    |     |     | 00011 | SRD        | E 11 110 111 - - ---00011 AAAAA DDDDD ZZZ | dD,dA        |
     |    |     |     | 00100 | MAW        | E 11 110 111 - - ---00100 AAAAA XXXXX ZZZ | rX,rA        |
     |    |     |     | 00101 | SAW        | E 11 110 111 - - ---00101 AAAAA XXXXX ZZZ | rX,rA        |
     |    |     |     | 00110 | MAD        | E 11 110 111 - - ---00110 AAAAA XXXXX ZZZ | dX,dA        |
