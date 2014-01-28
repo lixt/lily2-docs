@@ -221,27 +221,27 @@ In LILY2 ISA sheet, `+' indicates instruction code space.
     |    | 010 | 000 |   -   | TGT        | E 00 010 000 1 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | TGT.I      | E 00 010 000 1 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
     |    |     |     |       | TGT.U      | E 00 010 000 0 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | TGT.U.I    | E 00 010 000 0 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
+    |    |     |     |       | TGT.U.I    | E 00 010 000 0 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | 001 |   -   | TGE        | E 00 010 001 1 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | TGE.I      | E 00 010 001 1 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
     |    |     |     |       | TGE.U      | E 00 010 001 0 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | TGE.U.I    | E 00 010 001 0 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
+    |    |     |     |       | TGE.U.I    | E 00 010 001 0 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | 010 |   -   | TLT        | E 00 010 010 1 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | TLT.I      | E 00 010 010 1 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
     |    |     |     |       | TLT.U      | E 00 010 010 0 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | TLT.U.I    | E 00 010 010 0 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
+    |    |     |     |       | TLT.U.I    | E 00 010 010 0 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | 011 |   -   | TLE        | E 00 010 011 1 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | TLE.I      | E 00 010 011 1 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
     |    |     |     |       | TLE.U      | E 00 010 011 0 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | TLE.U.I    | E 00 010 011 0 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
+    |    |     |     |       | TLE.U.I    | E 00 010 011 0 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | 100 |   -   | TEQ        | E 00 010 100 - 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | TEQ.I      | E 00 010 100 - 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
     |    |     |     |       | TEQ.U      | E 00 010 100 - 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | TEQ.U.I    | E 00 010 100 - 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
+    |    |     |     |       | TEQ.U.I    | E 00 010 100 - 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | 101 |   -   | TNE        | E 00 010 101 - 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | TNE.I      | E 00 010 101 - 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
     |    |     |     |       | TNE.U      | E 00 010 101 - 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | TNE.U.I    | E 00 010 101 - 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
+    |    |     |     |       | TNE.U.I    | E 00 010 101 - 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | +++ | +++++ | ++++++++++ | +++++++++++++++++++++++++++++++++++++++++ | ++++++++++++ |
     |    |―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――|
     |    | 011 | 000 |   -   | GTO.B.4    | E 00 011 000 1 - 000BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
@@ -331,25 +331,25 @@ In LILY2 ISA sheet, `+' indicates instruction code space.
     |    |     |     |       | LSL.H.2    | E 00 100 000 - 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | LSL.H.4    | E 00 100 000 - 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | LSL.W.2    | E 00 100 000 - 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
-    |    |     |     |       | LSL.I      | E 00 100 000 - 1 ---LLLLL AAAAA DDDDD ZZZ | rD,rA,iI     |
+    |    |     |     |       | LSL.I      | E 00 100 000 - 1 ---LLLLL AAAAA DDDDD ZZZ | rD,rA,iL     |
     |    |     | 001 |   -   | LSR        | E 00 100 001 - 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | LSR.B.4    | E 00 100 001 - 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | LSR.H.2    | E 00 100 001 - 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | LSR.H.4    | E 00 100 001 - 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | LSR.W.2    | E 00 100 001 - 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
-    |    |     |     |       | LSR.I      | E 00 100 001 - 1 ---LLLLL AAAAA DDDDD ZZZ | rD,rA,iI     |
+    |    |     |     |       | LSR.I      | E 00 100 001 - 1 ---LLLLL AAAAA DDDDD ZZZ | rD,rA,iL     |
     |    |     | 010 |   -   | ASR        | E 00 100 010 - 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | ASR.B.4    | E 00 100 010 - 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | ASR.H.2    | E 00 100 010 - 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | ASR.H.4    | E 00 100 010 - 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | ASR.W.2    | E 00 100 010 - 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
-    |    |     |     |       | ASR.I      | E 00 100 010 - 1 ---LLLLL AAAAA DDDDD ZZZ | rD,rA,iI     |
+    |    |     |     |       | ASR.I      | E 00 100 010 - 1 ---LLLLL AAAAA DDDDD ZZZ | rD,rA,iL     |
     |    |     | 011 |   -   | RSR        | E 00 100 011 - 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | RSR.B.4    | E 00 100 011 - 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | RSR.H.2    | E 00 100 011 - 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | RSR.H.4    | E 00 100 011 - 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | RSR.W.2    | E 00 100 011 - 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
-    |    |     |     |       | RSR.I      | E 00 100 011 - 1 ---LLLLL AAAAA DDDDD ZZZ | rD,rA,iI     |
+    |    |     |     |       | RSR.I      | E 00 100 011 - 1 ---LLLLL AAAAA DDDDD ZZZ | rD,rA,iL     |
     |    |     | +++ | +++++ | ++++++++++ | +++++++++++++++++++++++++++++++++++++++++ | ++++++++++++ |
     |    |―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――|
     |    | 101 | 00? |   -   | MKL        | E 00 101 00M M M MMMMMMMM MMMMM DDDDD ZZZ | rD,iM        |
@@ -369,29 +369,29 @@ In LILY2 ISA sheet, `+' indicates instruction code space.
     |    |     |     | 01011 | SCW        | E 00 101 111 - - ---01011 AAAAA CCCCC ZZZ | rA,rC        |
     |    |     |     | +++++ | ++++++++++ | +++++++++++++++++++++++++++++++++++++++++ | ++++++++++++ |
     |    |―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――|
-    |    | 110 | 000 |   -   | ZIP.B.4    | E 00 110 000 - - 000BBBBB AAAAA DDDDD ZZZ | dD,rA,rB     | (1,2,3,4) + (5,6,7,8) = (1,5,2,6) + (3,7,4,8)
-    |    |     |     |       | ZIP.H.2    | E 00 110 000 - - 001BBBBB AAAAA DDDDD ZZZ | dD,rA,rB     | (1,2,3,4) + (5,6,7,8) = (1,2,5,6) + (3,4,7,8)
-    |    |     |     |       | ZIP.H.4    | E 00 110 000 - - 010BBBBB AAAAA DDDDD ZZZ | qD,dA,dB     |
-    |    |     |     |       | ZIP.W.2    | E 00 110 000 - - 011BBBBB AAAAA DDDDD ZZZ | qD,dA,dB     |
-    |    |     | 001 |   -   | UZP.B.4    | E 00 110 001 - - 000BBBBB AAAAA DDDDD ZZZ | dD,rA,rB     | (1,2,3,4) + (5,6,7,8) = (1,3,5,7) + (2,4,6,8)
-    |    |     |     |       | UZP.H.2    | E 00 110 001 - - 001BBBBB AAAAA DDDDD ZZZ | dD,rA,rB     | (1,2,3,4) + (5,6,7,8) = (1,2,5,6) + (3,4,7,8)
-    |    |     |     |       | UZP.H.4    | E 00 110 001 - - 010BBBBB AAAAA DDDDD ZZZ | qD,dA,dB     |
-    |    |     |     |       | UZP.W.2    | E 00 110 001 - - 011BBBBB AAAAA DDDDD ZZZ | qD,dA,dB     |
-    |    |     | 010 |   -   | UCT.B.4    | E 00 110 010 - - 000---HH AAAAA DDDDD ZZZ | rD,rA,iH     |
-    |    |     |     |       | UCT.H.2    | E 00 110 010 - - 001----G AAAAA DDDDD ZZZ | rD,rA,iG     |
-    |    |     |     |       | UCT.H.4    | E 00 110 010 - - 010---HH AAAAA DDDDD ZZZ | dD,dA,iH     |
-    |    |     |     |       | UCT.W.2    | E 00 110 010 - - 011----G AAAAA DDDDD ZZZ | dD,dA,iG     |
-    |    |     | 011 |   -   | MCT.B.4    | E 00 110 011 - - 000---HH AAAAA DDDDD ZZZ | rD,rA,iH     |
-    |    |     |     |       | MCT.H.2    | E 00 110 011 - - 001----G AAAAA DDDDD ZZZ | rD,rA,iG     |
-    |    |     |     |       | MCT.H.4    | E 00 110 011 - - 010---HH AAAAA DDDDD ZZZ | dD,dA,iH     |
-    |    |     |     |       | MCT.W.2    | E 00 110 011 - - 011----G AAAAA DDDDD ZZZ | dD,dA,iG     |
+    |    | 110 | 000 |   -   | ZIP.B.4    | E 00 110 000 - - -00BBBBB AAAAA DDDDD ZZZ | dD,rA,rB     | (1,2,3,4) + (5,6,7,8) = (1,5,2,6) + (3,7,4,8)
+    |    |     |     |       | ZIP.H.2    | E 00 110 000 - - -01BBBBB AAAAA DDDDD ZZZ | dD,rA,rB     | (1,2,3,4) + (5,6,7,8) = (1,2,5,6) + (3,4,7,8)
+    |    |     |     |       | ZIP.H.4    | E 00 110 000 - - -10BBBBB AAAAA DDDDD ZZZ | qD,dA,dB     |
+    |    |     |     |       | ZIP.W.2    | E 00 110 000 - - -11BBBBB AAAAA DDDDD ZZZ | qD,dA,dB     |
+    |    |     | 001 |   -   | UZP.B.4    | E 00 110 001 - - -00BBBBB AAAAA DDDDD ZZZ | dD,rA,rB     | (1,2,3,4) + (5,6,7,8) = (1,3,5,7) + (2,4,6,8)
+    |    |     |     |       | UZP.H.2    | E 00 110 001 - - -01BBBBB AAAAA DDDDD ZZZ | dD,rA,rB     | (1,2,3,4) + (5,6,7,8) = (1,2,5,6) + (3,4,7,8)
+    |    |     |     |       | UZP.H.4    | E 00 110 001 - - -10BBBBB AAAAA DDDDD ZZZ | qD,dA,dB     |
+    |    |     |     |       | UZP.W.2    | E 00 110 001 - - -11BBBBB AAAAA DDDDD ZZZ | qD,dA,dB     |
+    |    |     | 010 |   -   | UCT.B.4    | E 00 110 010 - - -00---HH AAAAA DDDDD ZZZ | rD,rA,iH     |
+    |    |     |     |       | UCT.H.2    | E 00 110 010 - - -01----G AAAAA DDDDD ZZZ | rD,rA,iG     |
+    |    |     |     |       | UCT.H.4    | E 00 110 010 - - -10---HH AAAAA DDDDD ZZZ | dD,dA,iH     |
+    |    |     |     |       | UCT.W.2    | E 00 110 010 - - -11----G AAAAA DDDDD ZZZ | dD,dA,iG     |
+    |    |     | 011 |   -   | MCT.B.4    | E 00 110 011 - - -00---HH AAAAA DDDDD ZZZ | rD,rA,iH     |
+    |    |     |     |       | MCT.H.2    | E 00 110 011 - - -01----G AAAAA DDDDD ZZZ | rD,rA,iG     |
+    |    |     |     |       | MCT.H.4    | E 00 110 011 - - -10---HH AAAAA DDDDD ZZZ | dD,dA,iH     |
+    |    |     |     |       | MCT.W.2    | E 00 110 011 - - -11----G AAAAA DDDDD ZZZ | dD,dA,iG     |
     |    |     | +++ | +++++ | ++++++++++ | +++++++++++++++++++++++++++++++++++++++++ | ++++++++++++ |
-    |    |     | 111 | 00000 | SWP.B.4    | E 00 110 111 - - 00000000 AAAAA DDDDD ZZZ | rD,rA        | (1,2,3,4) = (2,1,4,3)
-    |    |     |     |       | SWP.H.2    | E 00 110 111 - - 00100000 AAAAA DDDDD ZZZ | rD,rA        | (1,2,3,4) = (3,4,1,2)
-    |    |     |     |       | SWP.H.4    | E 00 110 111 - - 01000000 AAAAA DDDDD ZZZ | dD,dA        |
-    |    |     |     |       | SWP.W.2    | E 00 110 111 - - 01100000 AAAAA DDDDD ZZZ | dD,dA        |
-    |    |     |     | 00001 | RSB.B.4    | E 00 110 111 - - 00000001 AAAAA DDDDD ZZZ | rD,rA        | (1,2,3,4) = (4,3,2,1)
-    |    |     |     |       | RSB.H.4    | E 00 110 111 - - 01000001 AAAAA DDDDD ZZZ | dD,dA        |
+    |    |     | 111 | 00000 | SWP.B.4    | E 00 110 111 - - -0000000 AAAAA DDDDD ZZZ | rD,rA        | (1,2,3,4) = (2,1,4,3)
+    |    |     |     |       | SWP.H.2    | E 00 110 111 - - -0100000 AAAAA DDDDD ZZZ | rD,rA        | (1,2,3,4) = (3,4,1,2)
+    |    |     |     |       | SWP.H.4    | E 00 110 111 - - -1000000 AAAAA DDDDD ZZZ | dD,dA        |
+    |    |     |     |       | SWP.W.2    | E 00 110 111 - - -1100000 AAAAA DDDDD ZZZ | dD,dA        |
+    |    |     |     | 00001 | RSB.B.4    | E 00 110 111 - - -0000001 AAAAA DDDDD ZZZ | rD,rA        | (1,2,3,4) = (4,3,2,1)
+    |    |     |     |       | RSB.H.4    | E 00 110 111 - - -1000001 AAAAA DDDDD ZZZ | dD,dA        |
     |    |     |     | +++++ | ++++++++++ | +++++++++++++++++++++++++++++++++++++++++ | ++++++++++++ |
     |    |―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――|
     |    | +++ | +++ | +++++ | ++++++++++ | +++++++++++++++++++++++++++++++++++++++++ | ++++++++++++ |
