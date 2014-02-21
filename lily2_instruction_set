@@ -462,98 +462,98 @@ In LILY2 ISA sheet, `+' indicates instruction code space.
     | 10 | 000 | 000 |   -   | MUL        | E 10 000 000 1 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | MUL.B.4    | E 10 000 000 1 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | MUL.H.2    | E 10 000 000 1 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | MUL.H.4    | E 10 000 000 1 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | MUL.W.2    | E 10 000 000 1 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | MUL.H.4    | E 10 000 000 1 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | MUL.W.2    | E 10 000 000 1 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | MUL.I      | E 10 000 000 1 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
     |    |     |     |       | MUL.U      | E 10 000 000 0 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | MUL.U.B.4  | E 10 000 000 0 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | MUL.U.H.2  | E 10 000 000 0 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | MUL.U.H.4  | E 10 000 000 0 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | MUL.U.W.2  | E 10 000 000 0 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | MUL.U.H.4  | E 10 000 000 0 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | MUL.U.W.2  | E 10 000 000 0 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | MUL.U.I    | E 10 000 000 0 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | 001 |   -   | NMU        | E 10 000 001 1 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | NMU.B.4    | E 10 000 001 1 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | NMU.H.2    | E 10 000 001 1 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | NMU.H.4    | E 10 000 001 1 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | NMU.W.2    | E 10 000 001 1 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | NMU.H.4    | E 10 000 001 1 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | NMU.W.2    | E 10 000 001 1 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | NMU.I      | E 10 000 001 1 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
     |    |     |     |       | NMU.U      | E 10 000 001 0 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | NMU.U.B.4  | E 10 000 001 0 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | NMU.U.H.2  | E 10 000 001 0 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | NMU.U.H.4  | E 10 000 001 0 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | NMU.U.W.2  | E 10 000 001 0 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | NMU.U.H.4  | E 10 000 001 0 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | NMU.U.W.2  | E 10 000 001 0 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | NMU.U.I    | E 10 000 001 0 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | 010 |   -   | MAC        | E 10 000 010 1 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | MAC.B.4    | E 10 000 010 1 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | MAC.H.2    | E 10 000 010 1 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | MAC.H.4    | E 10 000 010 1 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | MAC.W.2    | E 10 000 010 1 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | MAC.H.4    | E 10 000 010 1 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | MAC.W.2    | E 10 000 010 1 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | MAC.I      | E 10 000 010 1 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
     |    |     |     |       | MAC.U      | E 10 000 010 0 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | MAC.U.B.4  | E 10 000 010 0 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | MAC.U.H.2  | E 10 000 010 0 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | MAC.U.H.4  | E 10 000 010 0 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | MAC.U.W.2  | E 10 000 010 0 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | MAC.U.H.4  | E 10 000 010 0 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | MAC.U.W.2  | E 10 000 010 0 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | MAC.U.I    | E 10 000 010 0 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | 011 |   -   | NMA        | E 10 000 011 1 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | NMA.B.4    | E 10 000 011 1 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | NMA.H.2    | E 10 000 011 1 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | NMA.H.4    | E 10 000 011 1 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | NMA.W.2    | E 10 000 011 1 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | NMA.H.4    | E 10 000 011 1 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | NMA.W.2    | E 10 000 011 1 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | NMA.I      | E 10 000 011 1 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
     |    |     |     |       | NMA.U      | E 10 000 011 0 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | NMA.U.B.4  | E 10 000 011 0 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | NMA.U.H.2  | E 10 000 011 0 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | NMA.U.H.4  | E 10 000 011 0 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | NMA.U.W.2  | E 10 000 011 0 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | NMA.U.H.4  | E 10 000 011 0 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | NMA.U.W.2  | E 10 000 011 0 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | NMA.U.I    | E 10 000 011 0 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | 100 |   -   | MSU        | E 10 000 100 1 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | MSU.B.4    | E 10 000 100 1 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | MSU.H.2    | E 10 000 100 1 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | MSU.H.4    | E 10 000 100 1 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | MSU.W.2    | E 10 000 100 1 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | MSU.H.4    | E 10 000 100 1 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | MSU.W.2    | E 10 000 100 1 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | MSU.I      | E 10 000 100 1 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
     |    |     |     |       | MSU.U      | E 10 000 100 0 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | MSU.U.B.4  | E 10 000 100 0 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | MSU.U.H.2  | E 10 000 100 0 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | MSU.U.H.4  | E 10 000 100 0 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | MSU.U.W.2  | E 10 000 100 0 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | MSU.U.H.4  | E 10 000 100 0 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | MSU.U.W.2  | E 10 000 100 0 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | MSU.U.I    | E 10 000 100 0 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | 101 |   -   | NMS        | E 10 000 101 1 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | NMS.B.4    | E 10 000 101 1 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | NMS.H.2    | E 10 000 101 1 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | NMS.H.4    | E 10 000 101 1 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | NMS.W.2    | E 10 000 101 1 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | NMS.H.4    | E 10 000 101 1 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | NMS.W.2    | E 10 000 101 1 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | NMS.I      | E 10 000 101 1 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
     |    |     |     |       | NMS.U      | E 10 000 101 0 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | NMS.U.B.4  | E 10 000 101 0 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | NMS.U.H.2  | E 10 000 101 0 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | NMS.U.H.4  | E 10 000 101 0 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | NMS.U.W.2  | E 10 000 101 0 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | NMS.U.H.4  | E 10 000 101 0 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | NMS.U.W.2  | E 10 000 101 0 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | NMS.U.I    | E 10 000 101 0 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | 110 |   -   | DIV        | E 10 000 110 1 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | DIV.B.4    | E 10 000 110 1 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | DIV.H.2    | E 10 000 110 1 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | DIV.H.4    | E 10 000 110 1 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | DIV.W.2    | E 10 000 110 1 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | DIV.H.4    | E 10 000 110 1 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | DIV.W.2    | E 10 000 110 1 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | DIV.I      | E 10 000 110 1 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
     |    |     |     |       | DIV.U      | E 10 000 110 0 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | DIV.U.B.4  | E 10 000 110 0 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | DIV.U.H.2  | E 10 000 110 0 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | DIV.U.H.4  | E 10 000 110 0 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | DIV.U.W.2  | E 10 000 110 0 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | DIV.U.H.4  | E 10 000 110 0 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | DIV.U.W.2  | E 10 000 110 0 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | DIV.U.I    | E 10 000 110 0 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | 111 |   -   | REM        | E 10 000 111 1 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | REM.B.4    | E 10 000 111 1 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | REM.H.2    | E 10 000 111 1 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | REM.H.4    | E 10 000 111 1 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | REM.W.2    | E 10 000 111 1 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | REM.H.4    | E 10 000 111 1 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | REM.W.2    | E 10 000 111 1 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | REM.I      | E 10 000 111 1 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
     |    |     |     |       | REM.U      | E 10 000 111 0 0 0--BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | REM.U.B.4  | E 10 000 111 0 0 100BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | REM.U.H.2  | E 10 000 111 0 0 101BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | REM.U.H.4  | E 10 000 111 0 0 110BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | REM.U.W.2  | E 10 000 111 0 0 111BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
+    |    |     |     |       | REM.U.H.4  | E 10 000 111 0 0 110BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
+    |    |     |     |       | REM.U.W.2  | E 10 000 111 0 0 111BBBBB AAAAA DDDDD ZZZ | dD,dA,dB     |
     |    |     |     |       | REM.U.I    | E 10 000 111 0 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――|
     |    | 001 | 000 |   -   | CMU.CH     | E 10 001 000 1 - 001BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
