@@ -236,12 +236,8 @@ In LILY2 ISA sheet, `+' indicates instruction code space.
     |    |     |     |       | TLE.U.I    | E 00 010 011 0 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | 100 |   -   | TEQ        | E 00 010 100 - 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | TEQ.I      | E 00 010 100 - 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
-    |    |     |     |       | TEQ.U      | E 00 010 100 - 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | TEQ.U.I    | E 00 010 100 - 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | 101 |   -   | TNE        | E 00 010 101 - 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
     |    |     |     |       | TNE.I      | E 00 010 101 - 1 IIIIIIII AAAAA DDDDD ZZZ | rD,rA,iI     |
-    |    |     |     |       | TNE.U      | E 00 010 101 - 0 ---BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
-    |    |     |     |       | TNE.U.I    | E 00 010 101 - 1 JJJJJJJJ AAAAA DDDDD ZZZ | rD,rA,iJ     |
     |    |     | +++ | +++++ | ++++++++++ | +++++++++++++++++++++++++++++++++++++++++ | ++++++++++++ |
     |    |―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――|
     |    | 011 | 000 |   -   | GTO.B.4    | E 00 011 000 1 - 000BBBBB AAAAA DDDDD ZZZ | rD,rA,rB     |
